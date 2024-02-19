@@ -7,6 +7,8 @@ import GraphicDesign from "./Graphic-design";
 import ShopifyStores from "./Shopify-stores";
 import Brands from "./Brands";
 import Services from "./Services";
+import { FaQ } from "react-icons/fa6";
+import FAQS from "./FAQS";
 
 export default function Home() {
   return (
@@ -39,6 +41,7 @@ export default function Home() {
           <ShopifyStores />
           <Brands />
           <Services />
+          <FAQS />
         </div>
       </div>
     </div>
