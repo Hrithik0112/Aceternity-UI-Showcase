@@ -5,6 +5,8 @@ import Link from "next/link";
 import WebsiteDesign from "./Website-design";
 import GraphicDesign from "./Graphic-design";
 import ShopifyStores from "./Shopify-stores";
+import { Braah_One } from "next/font/google";
+import Brands from "./Brands";
 
 export default function Home() {
   return (
@@ -35,6 +37,7 @@ export default function Home() {
           <WebsiteDesign />
           <GraphicDesign />
           <ShopifyStores />
+          <Brands />
         </div>
       </div>
     </div>
