@@ -42,6 +42,7 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
+            <div className="flex items-center">{item.icon}</div>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
