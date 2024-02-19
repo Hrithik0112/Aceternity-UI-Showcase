@@ -7,6 +7,7 @@ import GraphicDesign from "./Graphic-design";
 import ShopifyStores from "./Shopify-stores";
 import { Braah_One } from "next/font/google";
 import Brands from "./Brands";
+import Services from "./Services";
 
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
           <GraphicDesign />
           <ShopifyStores />
           <Brands />
+          <Services />
         </div>
       </div>
     </div>
