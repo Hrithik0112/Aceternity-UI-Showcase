@@ -3,10 +3,11 @@ import SliderOne from "@/components/ui/Slider";
 import { Spotlight } from "@/components/ui/Spotlight";
 import Link from "next/link";
 import WebsiteDesign from "./Website-design";
+import GraphicDesign from "./Graphic-design";
 
 export default function Home() {
   return (
-    <div className="w-full md:justify-center md:items-center bg-black/[0.96] bg-grid-white/[0.02] antialiased overflow-hidden">
+    <div className="w-full md:justify-center md:items-center bg-black/[0.96] bg-grid-white/[0.02] antialiased overflow-x-hidden">
       <Navbar />
       <Spotlight className="hidden md:flex md:left-80" fill="white" />
       <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
@@ -31,6 +32,7 @@ export default function Home() {
         <div className="w-full pt-20">
           <SliderOne />
           <WebsiteDesign />
+          <GraphicDesign />
         </div>
       </div>
     </div>
