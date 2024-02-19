@@ -4,6 +4,7 @@ import { Spotlight } from "@/components/ui/Spotlight";
 import Link from "next/link";
 import WebsiteDesign from "./Website-design";
 import GraphicDesign from "./Graphic-design";
+import ShopifyStores from "./Shopify-stores";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
           <SliderOne />
           <WebsiteDesign />
           <GraphicDesign />
+          <ShopifyStores />
         </div>
       </div>
     </div>
