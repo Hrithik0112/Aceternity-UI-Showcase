@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="w-full h-screen md:justify-center md:items-center bg-black/[0.96] bg-grid-white/[0.02] antialiased overflow-hidden">
       <Navbar />
-      <Spotlight className="hidden md:flex md:left-80 md:-top-80" fill="white" />
+      <Spotlight className="hidden md:flex md:left-80" fill="white" />
       <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
         <div
           className="text-4xl pb-6 md:text-7xl text-center px-6 
