@@ -1,3 +1,11 @@
+import {
+  PiAppStoreLogo,
+  PiHeadsetFill,
+  PiLock,
+  PiMegaphone,
+  PiMonitor,
+  PiStorefront,
+} from "react-icons/pi";
 import { HoverEffect } from "../ui/CardHover-Effect";
 
 export function CardHoverEffectDemo() {
@@ -9,38 +17,63 @@ export function CardHoverEffectDemo() {
 }
 export const projects = [
   {
-    title: "Stripe",
-    description: "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com",
+    icon: (
+      <div className="bg-blue-100 p-4 rounded-full">
+        <PiMonitor className="w-8 h-8 text-blue-600" />
+      </div>
+    ),
+    title: "Website Design",
+    description:
+      "We build fully responsive websites that look great on all devices. Our websites are designed to convert visitors into customers.",
   },
   {
-    title: "Netflix",
+    icon: (
+      <div className="bg-blue-100 p-4 rounded-full">
+        <PiStorefront className="w-8 h-8 text-blue-600" />
+      </div>
+    ),
+    title: "E-commerce Store",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+      "From small stores to large online retailers, we have the expertise to build a store that will help you grow your business.",
   },
   {
-    title: "Google",
+    icon: (
+      <div className="bg-blue-100 p-4 rounded-full">
+        <PiLock className="w-8 h-8 text-blue-600" />
+      </div>
+    ),
+    title: "Authentication",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+      "Secure authentication solutions for your website or app. We use the latest technology to keep your data safe.",
   },
   {
-    title: "Meta",
+    icon: (
+      <div className="bg-blue-100 p-4 rounded-full">
+        <PiMegaphone className="w-8 h-8 text-blue-600" />
+      </div>
+    ),
+    title: "Social Media",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
+      "We offer social media management and ad creation services. We can help you grow your social media presence and reach new customers.",
   },
   {
-    title: "Amazon",
+    icon: (
+      <div className="bg-blue-100 p-4 rounded-full">
+        <PiAppStoreLogo className="w-8 h-8 text-blue-600" />
+      </div>
+    ),
+    title: "App Development",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
+      "We build custom mobile apps for iOS and Android. Our apps are designed to be user-friendly and performant.",
   },
   {
-    title: "Microsoft",
+    icon: (
+      <div className="bg-blue-100 p-4 rounded-full">
+        <PiHeadsetFill className="w-8 h-8 text-blue-600" />
+      </div>
+    ),
+    title: "Support",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
+      "We offer support for all our clients. We are here to help you with any issues or questions you may have.",
   },
 ];
