@@ -1,3 +1,5 @@
+"use client";
+
 import Navbar from "@/components/Navbar";
 import SliderOne from "@/components/ui/Slider";
 import { Spotlight } from "@/components/ui/Spotlight";
@@ -7,13 +9,43 @@ import GraphicDesign from "./Graphic-design";
 import ShopifyStores from "./Shopify-stores";
 import Brands from "./Brands";
 import Services from "./Services";
-import { FaQ } from "react-icons/fa6";
 import FAQS from "./FAQS";
+import { useRef } from "react";
 
 export default function Home() {
+  const websiteDesignRef = useRef<HTMLDivElement>(null);
+  const graphicDesignRef = useRef<HTMLDivElement>(null);
+  const shopifyStoresRef = useRef<HTMLDivElement>(null);
+  const brandsRef = useRef<HTMLDivElement>(null);
+
+  const scrollToWebsiteDesign = () => {
+    websiteDesignRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  };
+
+  const scrollToGraphicDesign = () => {
+    graphicDesignRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToShopifyStores = () => {
+    shopifyStoresRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToBrands = () => {
+    brandsRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="w-full md:justify-center md:items-center bg-black/[0.96] bg-grid-white/[0.02] antialiased overflow-x-hidden">
-      <Navbar />
+      <Navbar
+        scrollToWebsiteDesign={scrollToWebsiteDesign}
+        scrollToGraphicDesign={scrollToGraphicDesign}
+        scrollToShopifyStores={scrollToShopifyStores}
+        scrollToBrands={scrollToBrands}
+      />
       <Spotlight className="hidden md:flex md:left-80" fill="white" />
       <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
         <div
@@ -36,10 +68,18 @@ export default function Home() {
         </Link>
         <div className="w-full pt-20">
           <SliderOne />
-          <WebsiteDesign />
-          <GraphicDesign />
-          <ShopifyStores />
-          <Brands />
+          <div ref={websiteDesignRef}>
+            <WebsiteDesign />
+          </div>
+          <div ref={graphicDesignRef}>
+            <GraphicDesign />
+          </div>
+          <div ref={shopifyStoresRef}>
+            <ShopifyStores />
+          </div>
+          <div ref={brandsRef}>
+            <Brands />
+          </div>
           <Services />
           <FAQS />
         </div>

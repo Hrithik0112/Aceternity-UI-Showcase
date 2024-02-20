@@ -6,7 +6,19 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Dropdown from "./Dropdown-Menu";
 
-const Navbar = () => {
+interface NavBarProps {
+  scrollToWebsiteDesign: () => void;
+  scrollToGraphicDesign: () => void;
+  scrollToShopifyStores: () => void;
+  scrollToBrands: () => void;
+}
+
+const Navbar = ({
+  scrollToWebsiteDesign,
+  scrollToGraphicDesign,
+  scrollToShopifyStores,
+  scrollToBrands,
+}: NavBarProps) => {
   const [isDropdownvisible, setIsDropdownvisible] = useState(false);
 
   const ToggleDropdown = () => {
@@ -37,10 +49,18 @@ const Navbar = () => {
          text-transparent bg-gradient-to-b
           from-neutral-50 to bg-neutral-400 bg-opacity-50 "
         >
-          <div className="hover:text-gray-50">Website Design</div>
-          <div className="hover:text-gray-50">Graphic Design</div>
-          <div className="hover:text-gray-50">Shopify Stores</div>
-          <div className="hover:text-gray-50">Brands</div>
+          <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">
+            Website Design
+          </div>
+          <div onClick={scrollToGraphicDesign} className="hover:text-gray-50">
+            Graphic Design
+          </div>
+          <div onClick={scrollToShopifyStores} className="hover:text-gray-50">
+            Shopify Stores
+          </div>
+          <div onClick={scrollToBrands} className="hover:text-gray-50">
+            Brands
+          </div>
 
           <Link href="/pricing" className="hover:text-gray-50">
             Pricing
