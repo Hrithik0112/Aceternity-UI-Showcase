@@ -11,6 +11,9 @@ import Brands from "./Brands";
 import Services from "./Services";
 import FAQS from "./FAQS";
 import { useRef } from "react";
+import { Epilogue } from "next/font/google";
+
+ const epilogue = Epilogue( {weight :'600' , subsets :["latin"]}  )
 
 export default function Home() {
   const websiteDesignRef = useRef<HTMLDivElement>(null);
@@ -49,10 +52,10 @@ export default function Home() {
       <Spotlight className="hidden md:flex md:left-80" fill="white" />
       <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
         <div
-          className="text-4xl pb-6 md:text-7xl text-center px-6 
+          className={`text-4xl pb-6 md:text-7xl text-center px-6 
          text-slate-300 bg-clip-text 
          text-transparent bg-gradient-to-b
-          from-neutral-50 to bg-neutral-400 bg-opacity-50"
+          from-neutral-50 to bg-neutral-400 bg-opacity-50 ${epilogue.className}`}
         >
           Create , Grow and <br /> Scale Your Business.
         </div>
