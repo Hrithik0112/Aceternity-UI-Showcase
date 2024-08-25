@@ -59,13 +59,15 @@ export default function Home() {
 
         <MaskContainer
           revealText={
-            <p className="w-auto mx-auto text-slate-800 text-center text-4xl md:text-7xl font-bold">
+            <p className="w-auto mx-auto bg-clip-text 
+         text-transparent bg-gradient-to-b
+          from-neutral-200 to bg-neutral-500 text-center text-4xl md:text-7xl font-bold">
               Want to Grow and <br /> Scale Your Business?
             </p>
           }
           size={40}
           revealSize={300}
-          className="pb-10 text-center px-6"
+          className="pb-10 text-center px-6 font-bold "
         >
           We are here to<br /> <span className="text-emerald-500">Scale</span>  Your  <span className="text-red-500">Business.</span> 
         </MaskContainer>
