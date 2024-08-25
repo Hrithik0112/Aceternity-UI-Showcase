@@ -12,8 +12,11 @@ import Services from "./Services";
 import FAQS from "./FAQS";
 import { useRef } from "react";
 import { Epilogue } from "next/font/google";
+import { MaskContainer } from "@/components/ui/svg-mask-effect";
+import { MacbookScroll } from "@/components/ui/macbook-scroll";
+import { TimelineDemo } from "@/components/TimelineDemo";
 
- const epilogue = Epilogue( {weight :'600' , subsets :["latin"]}  )
+const epilogue = Epilogue({ weight: "600", subsets: ["latin"] });
 
 export default function Home() {
   const websiteDesignRef = useRef<HTMLDivElement>(null);
@@ -69,6 +72,39 @@ export default function Home() {
         >
           Book a call
         </Link>
+        <div className="overflow-hidden bg-[#0B0B0F] w-full h-full -z-10">
+          <MacbookScroll
+            title={
+              <span className="text-white">
+                This Macbook is built with Tailwindcss. <br /> No kidding.
+              </span>
+            }
+            // badge={
+            //   <Link href="https://peerlist.io/manuarora">
+            //     <Badge className="h-10 w-10 transform -rotate-12" />
+            //   </Link>
+            // }
+            src={`/linear-test.webp`}
+            showGradient={false}
+          />
+        </div>
+        <div className="h-[40rem] w-full flex items-center justify-center  overflow-hidden">
+          <MaskContainer
+            revealText={
+              <p className="max-w-4xl mx-auto text-slate-800 text-center  text-4xl font-bold">
+                The first rule of MRR Club is you do not talk about MRR Club. The second rule of MRR
+                Club is you DO NOT talk about MRR Club.
+              </p>
+            }
+            className="h-[40rem] border rounded-md"
+          >
+            The first rule of <span className="text-red-500">MRR Club</span> is you do not talk
+            about MRR Club. The second rule of MRR Club is you DO NOT talk about{" "}
+            <span className="text-red-500">MRR Club</span>.
+          </MaskContainer>
+        </div>
+        <TimelineDemo/>
+
         <div className="w-full pt-20">
           <SliderOne />
           <div ref={websiteDesignRef}>
