@@ -52,7 +52,7 @@ export default function Home() {
         scrollToShopifyStores={scrollToShopifyStores}
         scrollToBrands={scrollToBrands}
       />
-      <Spotlight className="hidden md:flex md:left-80" fill="white" />
+      <Spotlight className="hidden md:flex md:left-[400px] z-50" fill="white" />
       <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
         {/* hero section title */}
         <div className="flex justify-center w-full">
@@ -77,11 +77,11 @@ export default function Home() {
         </p>
         <Link
           href="/book"
-          className="cursor-pointer flex justify-center items-center border rounded-full w-48 p-2 mx-auto my-6 text-white"
+          className="cursor-pointer hover:shadow-lg hover:shadow-white/30 duration-300 flex justify-center items-center border rounded-full w-48 p-2 mx-auto my-6 text-white"
         >
           Book a call
         </Link>
-        <div className="overflow-hidden bg-[#0B0B0F] w-full h-full -z-10">
+        {/* <div className="overflow-hidden bg-[#0B0B0F] w-full h-full -z-10">
           <MacbookScroll
             title={
               <span className="text-white">
@@ -91,7 +91,7 @@ export default function Home() {
             src={`/linear-test.webp`}
             showGradient={false}
           />
-        </div>
+        </div> */}
         <TimelineDemo />
 
         <div className="w-full pt-20">

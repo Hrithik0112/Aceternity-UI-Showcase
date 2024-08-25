@@ -45,7 +45,7 @@ export const MaskContainer = ({
       ref={containerRef}
       className={cn("relative inline-block", className)}
       animate={{
-        backgroundColor: isHovered ? "var(--slate-900)" : "transparent",
+        backgroundColor: isHovered ? "bg-black/[0.96]" : "transparent",
       }}
     >
       <motion.div

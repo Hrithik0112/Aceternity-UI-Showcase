@@ -1,5 +1,5 @@
 "use client";
-import { EvervaultCardDemo } from "@/components/snippets/EverVaultCardEx";
+
 import { ThreeDCardDemo } from "@/components/snippets/ThreeDCardEx";
 import { motion } from "framer-motion";
 
