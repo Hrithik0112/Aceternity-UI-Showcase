@@ -54,14 +54,23 @@ export default function Home() {
       />
       <Spotlight className="hidden md:flex md:left-80" fill="white" />
       <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
-        <div
-          className={`text-4xl pb-6 md:text-7xl text-center px-6 
-         text-slate-300 bg-clip-text 
-         text-transparent bg-gradient-to-b
-          from-neutral-50 to bg-neutral-400 bg-opacity-50 ${epilogue.className}`}
+        {/* hero section title */}
+        <div className="flex justify-center w-full">
+
+        <MaskContainer
+          revealText={
+            <p className="w-auto mx-auto text-slate-800 text-center text-4xl md:text-7xl font-bold">
+              Want to Grow and <br /> Scale Your Business?
+            </p>
+          }
+          size={40}
+          revealSize={300}
+          className="pb-10 text-center px-6"
         >
-          Create , Grow and <br /> Scale Your Business.
+          We are here to<br /> <span className="text-emerald-500">Scale</span>  Your  <span className="text-red-500">Business.</span> 
+        </MaskContainer>
         </div>
+
         <p className="mt-4 text-lg font-normal text-neutral-300 max-w-lg text-center mx-auto px-4">
           Custom tailored solutions for your business. We are a team of creatives who are excited to
           help you grow your business.
@@ -79,37 +88,17 @@ export default function Home() {
                 This Macbook is built with Tailwindcss. <br /> No kidding.
               </span>
             }
-            // badge={
-            //   <Link href="https://peerlist.io/manuarora">
-            //     <Badge className="h-10 w-10 transform -rotate-12" />
-            //   </Link>
-            // }
             src={`/linear-test.webp`}
             showGradient={false}
           />
         </div>
-        <div className="h-[40rem] w-full flex items-center justify-center  overflow-hidden">
-          <MaskContainer
-            revealText={
-              <p className="max-w-4xl mx-auto text-slate-800 text-center  text-4xl font-bold">
-                The first rule of MRR Club is you do not talk about MRR Club. The second rule of MRR
-                Club is you DO NOT talk about MRR Club.
-              </p>
-            }
-            className="h-[40rem] border rounded-md"
-          >
-            The first rule of <span className="text-red-500">MRR Club</span> is you do not talk
-            about MRR Club. The second rule of MRR Club is you DO NOT talk about{" "}
-            <span className="text-red-500">MRR Club</span>.
-          </MaskContainer>
-        </div>
-        <TimelineDemo/>
+        <TimelineDemo />
 
         <div className="w-full pt-20">
-          <SliderOne />
           <div ref={websiteDesignRef}>
-            <WebsiteDesign />
+
           </div>
+          <SliderOne />
           <div ref={graphicDesignRef}>
             <GraphicDesign />
           </div>
