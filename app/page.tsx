@@ -83,26 +83,19 @@ export default function Home() {
         >
           Book a call
         </Link>
-        {/* <div className="overflow-hidden bg-[#0B0B0F] w-full h-full -z-10">
-          <MacbookScroll
-            title={
-              <span className="text-white">
-                This Macbook is built with Tailwindcss. <br /> No kidding.
-              </span>
-            }
-            src={`/linear-test.webp`}
-            showGradient={false}
-          />
-        </div> */}
-        <TimelineDemo />
+
+        {/* <TimelineDemo /> */}
 
         <div className="w-full pt-20">
           <div ref={websiteDesignRef}>
 
-          </div>
           <SliderOne />
+          </div>
           <div ref={graphicDesignRef}>
             <GraphicDesign />
+          </div>
+          <div>
+          <TimelineDemo />
           </div>
           <div ref={shopifyStoresRef}>
             <ShopifyStores />

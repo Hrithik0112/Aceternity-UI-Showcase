@@ -9,7 +9,7 @@ const Dropdown: React.FunctionComponent<DropdownProps> = ({ onClose }) => {
   return (
     <motion.div
       className="w-screen h-screen text-slate-300 bg-gradient-to-b
-          from-neutral-50 to bg-neutral-400 bg-opacity-50  p-6 space-y-4 absolute top-28 right-0 left-0 
+          from-neutral-50 to bg-neutral-400   p-6 space-y-4 absolute top-28 right-0 left-0 
           z-50 rounded-t-3xl"
       initial={{ opacity: 0, y: "-80%" }}
       animate={{ opacity: 1, y: 0 }}
