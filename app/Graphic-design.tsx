@@ -28,7 +28,7 @@ const GraphicDesign = () => {
             animate={{ y: 0, opacity: 1 }}
             className="px-10 md:px-0"
           >
-            <EvervaultCardDemo />
+            <ThreeDCardDemo />
           </motion.div>
         </div>
       </div>
