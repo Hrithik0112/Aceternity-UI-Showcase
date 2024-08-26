@@ -8,7 +8,7 @@ export const MaskContainer = ({
   children,
   revealText,
   size = 100,  // Increased the initial mask size to make it more visible
-  revealSize = 300,  // Adjusted this to control the final size on hover
+  revealSize = 100,  // Adjusted this to control the final size on hover
   className,
 }: {
   children?: string | React.ReactNode;
@@ -43,7 +43,7 @@ export const MaskContainer = ({
   return (
     <motion.div
       ref={containerRef}
-      className={cn("relative inline-block", className)}
+      className={cn("relative inline-block pt-20 ", className)}
       animate={{
         backgroundColor: isHovered ? "bg-black/[0.96]" : "transparent",
       }}
@@ -59,6 +59,7 @@ export const MaskContainer = ({
         transition={{
           duration: 0,
         }}
+        // style={{ height: '125%' }}
       >
         <div className="absolute inset-0 bg-black opacity-50" />
         <div
@@ -74,7 +75,7 @@ export const MaskContainer = ({
         </div>
       </motion.div>
 
-      <div className="flex items-center justify-center text-slate-800">
+      <div className="flex items-center justify-center  text-slate-800">
         {revealText}
       </div>
     </motion.div>

@@ -55,7 +55,7 @@ export default function Home() {
       <Spotlight className="hidden md:flex md:left-[400px] z-50" fill="white" />
       <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
         {/* hero section title */}
-        <div className="flex justify-center w-full">
+        <div className="flex justify-center w-full ">
 
         <MaskContainer
           revealText={
@@ -66,8 +66,9 @@ export default function Home() {
             </p>
           }
           size={40}
-          revealSize={300}
-          className="pb-10 text-center px-6 font-bold "
+          revealSize={200}
+          className="pb-20 text-center px-6 font-bold "
+          
         >
           We are here to<br /> <span className="text-emerald-500">Scale</span>  Your  <span className="text-red-500">Business.</span> 
         </MaskContainer>
