@@ -3,6 +3,7 @@ import React from "react";
 
 import { Lora } from "next/font/google";
 import { cn } from "@/lib/utils";
+import GlowingCard from "@/components/animata/card/glowing-card";
 
 const font = Lora({
   subsets: ["latin"],
@@ -46,17 +47,18 @@ const Brands = () => {
           business.
         </p>
 
-        <div className="grid grid-cols-3  items-center justify-center  mx-auto md:w-3/5 cursor-pointer">
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 items-center justify-center  mx-auto md:w-4/5 cursor-pointer">
           {logos.map((logo, i) => (
-            <div key={i} className="p-4 md:p-20">
-              <Image
+            <div key={i} className="p-14 md:p-20">
+              {/* <Image
                 priority
                 src={logo.image}
                 width={500}
                 height={500}
                 alt="logo"
                 className="w-full h-auto max-w-full rounded-lg"
-              />
+              /> */}
+              <GlowingCard fromColor="#4158D0" toColor="#FFCC70" viaColor="#C850C0" imgSource={logo.image} />
             </div>
           ))}
         </div>
