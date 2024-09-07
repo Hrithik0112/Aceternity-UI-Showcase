@@ -37,6 +37,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { Textarea } from "@/components/ui/textarea";
 import { PiCheckLight, PiSmiley } from "react-icons/pi";
 import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
 
 const FormSchema = z.object({
   first_name: z.string(),
@@ -106,11 +107,17 @@ export default function ContactForm() {
 
   return (
     <div className=" w-full   md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden ">
-      <Navbar
+      {/* <Navbar
         scrollToWebsiteDesign={() => {}}
         scrollToGraphicDesign={() => {}}
         scrollToShopifyStores={() => {}}
         scrollToBrands={() => {}}
+      /> */}
+      <Header
+      scrollToWebsiteDesign={() => {}}
+      scrollToGraphicDesign={() => {}}
+      scrollToShopifyStores={() => {}}
+      scrollToBrands={() => {}}
       />
       <div className="md:flex items-start justify-center md:py-20 px-6">
         <div className="">

@@ -8,23 +8,22 @@ interface DropdownProps {
 const Dropdown: React.FunctionComponent<DropdownProps> = ({ onClose }) => {
   return (
     <motion.div
-      className="w-screen h-screen text-slate-300 bg-gradient-to-b
-          from-neutral-50 to bg-neutral-400   p-6 space-y-4 absolute top-28 right-0 left-0 
-          z-50 rounded-t-3xl"
+      className="w-screen h-screen text-slate-300 bg-gradient-to-b from-black to-gray-300   p-6 space-y-4 absolute top-28 right-0 left-0 
+          z-[100] rounded-t-3xl border-t"
       initial={{ opacity: 0, y: "-80%" }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: "-100%" }}
       transition={{ duration: 0.5 }}
     >
-      <div className="flex flex-col space-y-10">
-        <Link href="/pricing" className="text-black text-2xl">
+      <div className="space-y-12 flex flex-col text-center text-white text-2xl mt-20">
+        <Link href="/" className="hover:text-gray-200 transition-colors" onClick={onClose}>
+          Home
+        </Link>
+        <Link href="/pricing" className="hover:text-gray-200 transition-colors" onClick={onClose}>
           Pricing
         </Link>
-        <Link href="/contact" className="text-black text-2xl">
-          Conatct
-        </Link>
-        <Link href="/boo" className="text-black text-2xl">
-          Book a Call
+        <Link href="/contact" className="hover:text-gray-200 transition-colors" onClick={onClose}>
+          Contact
         </Link>
       </div>
     </motion.div>

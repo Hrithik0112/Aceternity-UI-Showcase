@@ -16,6 +16,7 @@ import { MaskContainer } from "@/components/ui/svg-mask-effect";
 import { MacbookScroll } from "@/components/ui/macbook-scroll";
 import { TimelineDemo } from "@/components/TimelineDemo";
 import { DemoOrbitingCircles } from "@/components/DemoOrbitingCircles";
+import Header from "@/components/Header";
 
 const epilogue = Epilogue({ weight: "600", subsets: ["latin"] });
 
@@ -46,13 +47,23 @@ export default function Home() {
   };
 
   return (
-    <div className="w-full  md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
-      <Navbar
+    <div className="bg-black/[0.95]">
+<Header 
+      scrollToWebsiteDesign={scrollToWebsiteDesign}
+      scrollToGraphicDesign={scrollToGraphicDesign}
+      scrollToShopifyStores={scrollToShopifyStores}
+      scrollToBrands={scrollToBrands}
+      />
+    <div className="w-full  md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-x-hidden">
+      {/* <Navbar
         scrollToWebsiteDesign={scrollToWebsiteDesign}
         scrollToGraphicDesign={scrollToGraphicDesign}
         scrollToShopifyStores={scrollToShopifyStores}
         scrollToBrands={scrollToBrands}
-      />
+      /> */}
+
+      
+
       <Spotlight className="hidden md:flex md:left-[400px] z-50" fill="white" />
       <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
         {/* hero section title */}
@@ -119,6 +130,7 @@ export default function Home() {
           <FAQS />
         </div>
       </div>
+    </div>
     </div>
   );
 }

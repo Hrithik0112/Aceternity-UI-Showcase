@@ -1,5 +1,6 @@
 "use client";
 
+import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import { PiCheckCircleFill } from "react-icons/pi";
@@ -71,11 +72,17 @@ const Pricing = () => {
      bg-black/[0.96] antialiased 
      bg-grid-white/[0.02] relative overflow-hidden"
     >
-      <Navbar
+      {/* <Navbar
         scrollToWebsiteDesign={() => {}}
         scrollToGraphicDesign={() => {}}
         scrollToShopifyStores={() => {}}
         scrollToBrands={() => {}}
+      /> */}
+      <Header
+      scrollToWebsiteDesign={() => {}}
+      scrollToGraphicDesign={() => {}}
+      scrollToShopifyStores={() => {}}
+      scrollToBrands={() => {}}
       />
 
       <div className="flex items-center justify-center flex-col   ">
