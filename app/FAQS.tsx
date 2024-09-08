@@ -19,30 +19,31 @@ const FAQS = () => {
           Get answers.
         </div>
         <Accordion type="single" collapsible>
-          <AccordionItem value="item-1">
-            <AccordionTrigger>What is Bird?</AccordionTrigger>
-            <AccordionContent>
-              Bird is a full fledge marketing agency that specializes in branding, web design, and
-              digital marketing.
-            </AccordionContent>
-          </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger>How to start ?</AccordionTrigger>
             <AccordionContent>
-              You can start by contacting us. We will get back to you within 24 hours.
+              You can start by contacting us at our-servies@gmail.com . We will get back to you within 24 hours.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-1">
+            <AccordionTrigger>Can you redesign an existing website?</AccordionTrigger>
+            <AccordionContent>
+              Absolutely! We can take your existing website and give it a fresh, modern look, improve performance, and enhance the user experience.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-2">
+            <AccordionTrigger>Do you offer custom website designs or use templates?</AccordionTrigger>
+            <AccordionContent>
+              We specialize in custom website designs tailored to meet your specific business needs. However, we can also work with templates if you prefer a quicker and more budget-friendly option.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
             <AccordionTrigger>Pricing ?</AccordionTrigger>
             <AccordionContent>
-              We offer custom tailored solutions for your business. Contact us to get a quote.
+              We offer custom tailored solutions for your business and We are flexible. Contact us to get a quote.
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="item-4">
-            <AccordionTrigger>Support ?</AccordionTrigger>
-            <AccordionContent>We offer Monday-Friday support for all our clients.</AccordionContent>
-          </AccordionItem>
         </Accordion>
       </div>
     </div>

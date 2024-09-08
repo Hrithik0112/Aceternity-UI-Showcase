@@ -48,89 +48,89 @@ export default function Home() {
 
   return (
     <div className="bg-black/[0.95]">
-<Header 
-      scrollToWebsiteDesign={scrollToWebsiteDesign}
-      scrollToGraphicDesign={scrollToGraphicDesign}
-      scrollToShopifyStores={scrollToShopifyStores}
-      scrollToBrands={scrollToBrands}
-      />
-    <div className="w-full  md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-x-hidden">
-      {/* <Navbar
+      <div className="w-full  md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-x-hidden">
+        <Header
+          scrollToWebsiteDesign={scrollToWebsiteDesign}
+          scrollToGraphicDesign={scrollToGraphicDesign}
+          scrollToShopifyStores={scrollToShopifyStores}
+          scrollToBrands={scrollToBrands}
+        />
+        {/* <Navbar
         scrollToWebsiteDesign={scrollToWebsiteDesign}
         scrollToGraphicDesign={scrollToGraphicDesign}
         scrollToShopifyStores={scrollToShopifyStores}
         scrollToBrands={scrollToBrands}
       /> */}
 
-      
 
-      <Spotlight className="hidden md:flex md:left-[400px] z-50" fill="white" />
-      <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
-        {/* hero section title */}
-        <div className="flex justify-center w-full ">
-          <MaskContainer
-            revealText={
-              <p
-                className="w-auto mx-auto bg-clip-text 
+
+        <Spotlight className="hidden md:flex md:left-[400px] z-50" fill="white" />
+        <div className="p-2 mx-auto relative z-10 w-full pt-10 md:pt-20 ">
+          {/* hero section title */}
+          <div className="flex justify-center w-full ">
+            <MaskContainer
+              revealText={
+                <p
+                  className="w-auto lg:mx-auto bg-clip-text 
          text-transparent bg-gradient-to-b
-          from-neutral-200 to bg-neutral-500 text-center text-4xl md:text-7xl font-bold"
-              >
-                Want to Grow and <br /> Scale Your Business?
-              </p>
-            }
-            size={40}
-            revealSize={200}
-            className="pb-20 text-center px-6 font-bold "
+          from-neutral-200 to bg-neutral-500 text-center text-6xl md:text-7xl lg:text-9xl font-bold"
+                >
+                  Want to Grow and <br /> Scale Your Business?
+                </p>
+              }
+              size={40}
+              revealSize={200}
+              className="pb-5 sm:pb-20 text-center px-6 font-bold "
+            >
+              We are here to
+              <br /> <span className="text-emerald-500">Scale</span> Your{" "}
+              <span className="text-red-500">Business.</span>
+            </MaskContainer>
+          </div>
+
+          <p className="mt-4 text-lg font-normal text-neutral-300 max-w-lg text-center mx-auto px-1">
+            "Your Vision, Our Expertise— We build Websites That Elevate Your Brand."
+          </p>
+          <Link
+            href=""
+            className="cursor-pointer hover:shadow-lg hover:shadow-white/30 duration-300 flex justify-center items-center border rounded-full w-48 p-2 mx-auto mt-6 text-white"
           >
-            We are here to
-            <br /> <span className="text-emerald-500">Scale</span> Your{" "}
-            <span className="text-red-500">Business.</span>
-          </MaskContainer>
-        </div>
+            Book a call
+          </Link>
 
-        <p className="mt-4 text-lg font-normal text-neutral-300 max-w-lg text-center mx-auto px-4">
-          Custom tailored solutions for your business. We are a team of creatives who are excited to
-          help you grow your business.
-        </p>
-        <Link
-          href="/book"
-          className="cursor-pointer hover:shadow-lg hover:shadow-white/30 duration-300 flex justify-center items-center border rounded-full w-48 p-2 mx-auto my-6 text-white"
-        >
-          Book a call
-        </Link>
+          {/* <TimelineDemo /> */}
 
-        {/* <TimelineDemo /> */}
+          <div className="w-full pt-2">
+            {/* <div ref={websiteDesignRef}>
+              <SliderOne />
+            </div> */}
+            <Services />
 
-        <div className="w-full pt-20">
-          <div ref={websiteDesignRef}>
-            <SliderOne />
-          </div>
-          <div ref={graphicDesignRef}>
-            <GraphicDesign />
-          </div>
-          <div>
-            <TimelineDemo />
-          </div>
-          <div ref={shopifyStoresRef}>
-            <ShopifyStores />
-          </div>
-          <div ref={brandsRef}>
-            {/* <Brands /> */}
-            <div className="text-4xl md:pb-8 md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-purple-500 to-sky-200 bg-opacity-50 mt-20">
-              Our Tech Stack <br />
+            <div ref={graphicDesignRef}>
+              <GraphicDesign />
             </div>
-            <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto">
-              Our tech stack combines modern frameworks like React, Next.js, Node.js, and MongoDB,
-              with tools like Tailwind CSS and Vercel to build scalable, high-performance
-              applications efficiently.
-            </p>
-            <DemoOrbitingCircles />
+            <div>
+              {/* <TimelineDemo /> */}
+            </div>
+            <div ref={shopifyStoresRef}>
+              <ShopifyStores />
+            </div>
+            <div ref={brandsRef}>
+              {/* <Brands /> */}
+              <div className="text-4xl md:pb-8 md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-purple-500 to-sky-200 bg-opacity-50 mt-20">
+                Our Tech Stack <br />
+              </div>
+              <p className="mt-4 text-lg font-normal  text-neutral-300 text-center mx-[10%]">
+                Our tech stack combines modern frameworks like React, Next.js, Node.js, and MongoDB,
+                with tools like Tailwind CSS and Vercel to build scalable, high-performance
+                applications efficiently.
+              </p>
+              <DemoOrbitingCircles />
+            </div>
+            <FAQS />
           </div>
-          <Services />
-          <FAQS />
         </div>
       </div>
-    </div>
     </div>
   );
 }

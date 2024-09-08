@@ -29,7 +29,7 @@ const Navbar = ({
   };
   return (
     <div>
-      <div className="p-6 md:p-10 flex items-center justify-between z-50">
+      <div className="p-6 md:p-10 flex items-center justify-between z-50 border-2 border-red-400">
         <div>
           <Link className="cursor-pointer" href="/">
             <Image
