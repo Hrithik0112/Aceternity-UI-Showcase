@@ -44,16 +44,16 @@ const Header = ({
         <div className="hidden md:block">
           <nav className="flex gap-8 text-sm">
             <a onClick={scrollToWebsiteDesign} className="text-white/70 hover:text-white transition-colors cursor-pointer">
-              Website Design
+              Services
             </a>
             <a onClick={scrollToGraphicDesign} className="text-white/70 hover:text-white transition-colors cursor-pointer">
-              Graphic Design
+              Work
             </a>
             <a onClick={scrollToShopifyStores} className="text-white/70 hover:text-white transition-colors cursor-pointer">
-              Shopify Stores
+              Designs
             </a>
             <a onClick={scrollToBrands} className="text-white/70 hover:text-white transition-colors cursor-pointer">
-              Brands
+              Tech
             </a>
             <a href="/pricing" className="text-white/70 hover:text-white transition-colors">
               Pricing
@@ -61,7 +61,7 @@ const Header = ({
           </nav>
         </div>
         <div className="flex items-center gap-4 text-white">
-          <Link href="/contact">
+          <Link href="/contact" className="hidden md:flex">
             <BasicButton>Contact</BasicButton>
           </Link>
           <div className="md:hidden" onClick={toggleDropdown}>
