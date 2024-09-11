@@ -78,9 +78,9 @@ export default function Home() {
                   Want to Grow and <br /> Scale Your Business?
                 </p>
               }
-              size={40}
-              revealSize={200}
-              className="pb-5 sm:pb-20 text-center px-6 font-bold "
+              size={80}
+              revealSize={300}
+              className="pb-5 sm:pb-20 text-center  font-bold  "
             >
               We are here to
               <br /> <span className="text-emerald-500">Scale</span> Your{" "}
